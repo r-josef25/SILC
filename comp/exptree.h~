@@ -1,0 +1,14 @@
+typedef struct tnode{
+  int val;
+  char *op;
+  treenode *left, *right;
+}tnode;
+
+#define TTSTYPE *tnode;
+
+tnode* makeLeafNode(int);
+tnode* makeOperatorNode(int, *tnode, *tnode);
+
+int evaluateNode(*tnode);
+int getReg(void);
+void freeReg(void);
